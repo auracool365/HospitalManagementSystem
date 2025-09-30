@@ -21,11 +21,11 @@ hs_err_pid*
 Thumbs.db
 
 # Data files (JSON storage) - Keep these local only
-data/*.json
-data/hospitals.json
-data/patients.json
-data/users.json
-data/backup/*.json
+/*.json
+/hospitals.json
+/patients.json
+/users.json
+/backup/*.json
 
 # Log files
 *.log
