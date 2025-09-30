@@ -97,62 +97,12 @@ HospitalManagementSystem/
 │   ├── users.json (generated on first run)
 │   └── backup/ (backup files stored here)
 └── README.md
-Troubleshooting
-GSON Library Issues:
 
-Cannot download GSON jar
-
-Alternative method: Search "gson jar download" in Google
-Maven Repository: Go to <https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1>
-Manual download: Right-click the jar link and "Save As"
-
-File not found after download
-
-Check your Downloads folder: ls ~/Downloads/gson*(Linux/Mac) or dir %USERPROFILE%\Downloads\gson* (Windows)
-Make sure the file name is exactly: gson-2.10.1.jar
-If file name is different, rename it: mv downloaded-file.jar gson-2.10.1.jar
-
-Permission denied when moving file
-
-Linux/Mac: sudo mv ~/Downloads/gson-2.10.1.jar lib/
-Windows: Run Command Prompt as Administrator
-
-Common Compilation Issues:
-
-"ClassNotFoundException: com.google.gson"
-
-Verify GSON jar exists: ls lib/gson-2.10.1.jar
-Check classpath syntax (: for Linux/Mac, ; for Windows)
-Make sure jar file isn't corrupted (try re-downloading)
-
-"Cannot find or load main class"
-
-Ensure all Java files are compiled: ls *.class should show 7 class files
-Check that you're running from the correct directory
-Verify main class name: HospitalManagementSystem (no .java extension)
-
-Compilation errors
-
-Make sure you're using JDK 8 or higher: java -version
-Verify all Java files are present: ls *.java should show 7 files
-Check for typos in file names (case-sensitive)
-
-File Permission Issues:
-
-Permission errors on data files
-
-Ensure write permissions: chmod 755 . (Linux/Mac)
+** Ensure write permissions: chmod 755 . (Linux/Mac)
 Check that data directory exists: ls -la data/
 Try running from a directory you have full access to
 
-JSON parsing errors
-
-Delete corrupted files: rm data/*.json
-System will regenerate sample data on next run
-Check disk space: df -h . (Linux/Mac)
-
-System Requirements:
-
+** System Requirements:
 RAM: Minimum 512MB available memory
 Storage: At least 50MB free space
 Java Version: JDK 8 or higher
