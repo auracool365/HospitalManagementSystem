@@ -6,10 +6,8 @@
 *.war
 *.ear
 
-# Virtual machine crash logs
-hs_err_pid*
-
 # IDE files
+.vscode/
 .idea/
 *.iml
 .classpath
@@ -20,19 +18,13 @@ hs_err_pid*
 .DS_Store
 Thumbs.db
 
-# Data files (JSON storage) - Keep these local only
-/*.json
-/hospitals.json
-/patients.json
-/users.json
-/backup/*.json
+# Data files - ignore all JSON in data folder
+data/*.json
+data/backup/*.json
 
-# Log files
+# Keep folder structure
+!data/.gitkeep
+!data/backup/.gitkeep
+
+# Logs
 *.log
-
-# Temporary files
-*.tmp
-*.bak
-*.swp
-*.swo
-*~
