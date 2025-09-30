@@ -2,10 +2,10 @@
 
 **Student Details:**
 
-- **Name:** Mamman Cornelius Ohiani
-- **Matric No:** 2022010527
+- **Name:**       Mamman Cornelius Ohiani
+- **Matric No:**  2022010527
 - **Department:** Computer Science
-- **Faculty:** Computing and Informatics
+- **Faculty:**    Computing and Informatics
 
 ---
 
@@ -38,21 +38,23 @@ The Hospital Management System is a comprehensive Java-based application designe
 ### 3.1 File Structure
 
 HospitalManagementSystem/
-├── Hospital.java               # Hospital entity model
-├── Patient.java               # Patient entity model
-├── User.java                  # User entity model
-├── DataManager.java           # JSON persistence manager
-├── DataGenerator.java         # Local data generator
-├── HospitalService.java       # Business logic layer
-├── HospitalManagementSystem.java # Main application
-├── data/                      # Data directory
-│   ├── hospitals.json         # Hospital data storage
-│   ├── patients.json          # Patient data storage
-│   ├── users.json            # User data storage
-│   └── backup/               # Backup files directory
-├── lib/                      # External libraries
-│   └── gson-2.10.1.jar       # JSON processing library
-└── README.md                 # Setup instructions
+**├── Hospital.java**                 # Hospital entity model
+**├── Patient.java**                  # Patient entity model
+**├── User.java**                     # User entity model
+**├── DataManager.java**              # JSON persistence manager
+**├── DataGenerator.java**            # Local data generator
+**├── HospitalService.java**          # Business logic layer
+**├── HospitalManagementSystem.java** # Main application
+**├── data/**                         # Data directory
+**│   ├── hospitals.json**            # Hospital data storage
+**│   ├── patients.json**             # Patient data storage
+**│   ├── users.json**                # User data storage
+**│   └── backup/**                   # Backup files directory
+**├── lib/**                          # External libraries
+**│   └── gson-2.10.1.jar**           # JSON processing library
+**└── README.md**                     # Project documentation
+
+Setup instructions
 
 ### 3.2 Design Patterns Used
 
@@ -133,13 +135,6 @@ HospitalManagementSystem/
 - **Hospitals:** 25 hospital records
 - **Patients:** 75 patient records  
 - **Users:** 16 user accounts (1 admin + 15 staff)
-
-### 7.2 Data Realism
-
-- **Authentic Names:** Real Yoruba names from Ogbomosho region
-- **Realistic Pricing:** Market-appropriate room rates (₦5,000 - ₦50,000)
-- **Medical Accuracy:** Common diagnoses and medical conditions
-- **Geographic Accuracy:** Real areas and locations in Ogbomosho
 
 ## 8. System Capabilities
 
@@ -243,10 +238,3 @@ The Hospital Management System successfully demonstrates comprehensive software 
 
 - Clean code architecture with proper separation of concerns
 - Demonstrates multiple programming concepts and design patterns
-
----
-
-**Project Completed by:** Mamman Cornelius Ohiani  
-**Academic Session:** 2024/2025 FCI SWEP
-**Department:** Computer Science  
-**Institution:** Faculty of Computing and Informatics

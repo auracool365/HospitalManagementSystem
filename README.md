@@ -3,72 +3,37 @@
 Quick Start Guide
 Prerequisites
 
-Java Development Kit (JDK) 8 or higher
+Java Development Kit (JDK) 8 or higher installed
 GSON library for JSON processing
 
-Step 1: Download Required Files
-Option 1: Direct Download (Recommended)
+## Step 1: Download Required Files
 
-Open your browser and go to: <https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/>
+- Option 1: Direct Download (Recommended)
+go to: <https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/>
 Click on gson-2.10.1.jar to download it
 Save it to your Downloads folder
 
-Option 2: Using wget (Linux/Mac)
+- Option 2: Using wget (Linux/Mac)
 bashwget <https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar>
-Option 3: Using curl (Linux/Mac)
+
+- Option 3: Using curl (Linux/Mac)
 bashcurl -O <https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar>
-Step 2: Project Setup
 
-Create project directory:
+### Step 2: Compilation
 
-bash   mkdir HospitalManagementSystem
-   cd HospitalManagementSystem
-
-Create required directories:
-
-bash   mkdir lib
-   mkdir data
-   mkdir data/backup
-
-Move the downloaded GSON jar file to the lib directory:
-If you downloaded to Downloads folder:
-
-bash   # Linux/Mac
-   mv ~/Downloads/gson-2.10.1.jar lib/
-
-## Windows (in Command Prompt)
-
-   move %USERPROFILE%\Downloads\gson-2.10.1.jar lib\
-If you downloaded using wget/curl in current directory:
-bash   mv gson-2.10.1.jar lib/
-
-Save all Java files in the main project directory:
-
-Copy all the Java code from the artifacts above
-Create files: Hospital.java, Patient.java, User.java, DataManager.java, DataGenerator.java, HospitalService.java, HospitalManagementSystem.java
-
-Verify your setup:
-
-bash   ls lib/
-
-### Should show: gson-2.10.1.jar
-
-   ls *.java
-
-#### Should show all 7 Java files
-
-Step 3: Compilation
 bashjavac -cp "lib/gson-2.10.1.jar" *.java
 
 For Windows:
 cmdjavac -cp "lib\gson-2.10.1.jar"*.java
 
-Step 4: Running the Application
+#### Step 4: Running the Application
+
 bashjava -cp ".:lib/gson-2.10.1.jar" HospitalManagementSystem
 
 For Windows:
 cmdjava -cp ".;lib\gson-2.10.1.jar" HospitalManagementSystem
 
+**Should show all the Java files below**
 Default Login Credentials:
 Username: admin
 Password: admin123
@@ -97,16 +62,6 @@ HospitalManagementSystem/
 │   ├── users.json (generated on first run)
 │   └── backup/ (backup files stored here)
 └── README.md
-
-** Ensure write permissions: chmod 755 . (Linux/Mac)
-Check that data directory exists: ls -la data/
-Try running from a directory you have full access to
-
-** System Requirements:
-RAM: Minimum 512MB available memory
-Storage: At least 50MB free space
-Java Version: JDK 8 or higher
-Operating System: Windows, Linux, or macOS
 
 Features Overview
 User Roles:
@@ -144,11 +99,3 @@ Password-protected user accounts
 Role-based access control
 Input validation and sanitization
 Secure session management
-
-Support
-For technical issues or questions about this project, please refer to the complete PROJECT_REPORT.md documentation.
-
-Developed by: Mamman Cornelius Ohiani
-Matric No: 2022010527
-Department: Computer Science
-Faculty: Computing and Informatics
