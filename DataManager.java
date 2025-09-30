@@ -19,7 +19,7 @@ public class DataManager {
             .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
             .create();
 
-    // Ensure data directory exists
+    // Ensures data directory exists
     static {
         new File("data").mkdirs();
     }
